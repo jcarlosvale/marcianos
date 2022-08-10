@@ -6,4 +6,8 @@ public class CacheExampleFactory {
         return new CacheExample<K,V>();
     }
 
+    public <T> String mensagem(T valor) {
+        return valor.toString();
+    }
+
 }

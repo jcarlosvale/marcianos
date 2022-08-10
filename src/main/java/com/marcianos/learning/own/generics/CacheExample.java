@@ -11,6 +11,14 @@ public class CacheExample<K, V> {
         this.cacheMap = new HashMap<>();
     }
 
+    public void mensagem(K e) {
+        if (e instanceof RuntimeException) {
+            System.out.println("fghjkl");
+        } else {
+            //bla bla bla
+        }
+    }
+
     public void add(K key, V value) {
         this.cacheMap.put(key, value);
     }
