@@ -1,5 +1,9 @@
 package com.marcianos.learning.loja.entidade;
 
 
-public non-sealed class Livro implements Produto, Entregavel {
+public final class Livro implements Produto, Entregavel {
+    @Override
+    public double custoFrete() {
+        return 10;
+    }
 }
