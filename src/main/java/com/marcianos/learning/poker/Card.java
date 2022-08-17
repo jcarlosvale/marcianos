@@ -3,8 +3,11 @@ package com.marcianos.learning.poker;
 
 public class Card implements Comparable<Card>{
 
-    private final Naipe naipe;
-    private final char valorFace;
+    private  Naipe naipe;
+    private  char valorFace;
+
+
+    public Card(){}
 
     public Card(final Naipe naipe, final char valorFace) {
         //TODO: validar valorFace --> T
