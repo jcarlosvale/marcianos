@@ -1,7 +1,7 @@
 package com.marcianos.learning.entidades;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NonNull;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -15,26 +15,16 @@ titular : Usuario
 dataCadastro: LocalDateTime
  */
 @Data
+@AllArgsConstructor
 public abstract class BankAccount implements Entity{
 
-    private final int id;
-    private final Bank bank;
-    private final Country country;
-    private final BigDecimal balance;
+    private int id;
+    private Bank bank;
+    private Country country;
+    private BigDecimal balance;
 
-    private final Currency currency;
-    private final User user;
-    private final LocalDateTime activationDate;
+    private Currency currency;
+    private User user;
+    private LocalDateTime activationDate;
 
-    public BankAccount(int id, @NonNull Bank bank, @NonNull Country country,
-                       @NonNull BigDecimal balance, Currency currency, @NonNull User user,
-                       @NonNull LocalDateTime activationDate) {
-        this.id = id;
-        this.bank = bank;
-        this.country = country;
-        this.balance = balance;
-        this.currency = currency;
-        this.user = user;
-        this.activationDate = activationDate;
-    }
 }
