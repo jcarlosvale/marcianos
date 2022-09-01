@@ -1,6 +1,8 @@
 package com.marcianos.learning.lambda.expressions;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @FunctionalInterface
 public interface ListOfNumberOperation {
@@ -15,5 +17,13 @@ public interface ListOfNumberOperation {
 
         ListOfNumberOperation operation = null;
         System.out.println("Resultado operacao " + operation.calculate(lista3));
+
+
+        Map<String, Integer> map = new HashMap<>();
+
+        for(Map.Entry<String, Integer> elemento : map.entrySet()) {
+            elemento.getKey();
+            elemento.getValue();
+        }
     }
 }
