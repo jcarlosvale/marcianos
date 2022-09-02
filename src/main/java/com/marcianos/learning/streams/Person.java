@@ -23,6 +23,7 @@ public class Person {
     private String maritalStatus;
     private int numberOfChildren;
 
+
     public static List<Person> getPersons() {
         return
         Arrays.stream(getAsString()
